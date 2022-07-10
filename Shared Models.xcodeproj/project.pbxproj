@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E95B97D3287B06E500B0A353 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B97D2287B06E500B0A353 /* LocalizedStrings.swift */; };
+		E95B97D6287B078400B0A353 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E95B97D5287B078400B0A353 /* RxCocoa */; };
+		E95B97D8287B078400B0A353 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E95B97D7287B078400B0A353 /* RxSwift */; };
+		E95B97DB287B0FB900B0A353 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E95B97DD287B0FB900B0A353 /* Localizable.strings */; };
 		E98D5D45287AAA8300C39F5A /* MovieResultEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98D5D44287AAA8300C39F5A /* MovieResultEntity.swift */; };
 		E99798D8287AC99900FB3751 /* Movies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E99798D6287AC99900FB3751 /* Movies.xcdatamodeld */; };
 		E99798E3287ACBAB00FB3751 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99798E2287ACBAB00FB3751 /* CoreDataManager.swift */; };
@@ -15,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E95B97D2287B06E500B0A353 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		E95B97DC287B0FB900B0A353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E98D5D44287AAA8300C39F5A /* MovieResultEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResultEntity.swift; sourceTree = "<group>"; };
 		E99798D7287AC99900FB3751 /* Movies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movies.xcdatamodel; sourceTree = "<group>"; };
 		E99798E2287ACBAB00FB3751 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -30,12 +36,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95B97D8287B078400B0A353 /* RxSwift in Frameworks */,
+				E95B97D6287B078400B0A353 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E95B97D1287B06D700B0A353 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				E95B97D2287B06E500B0A353 /* LocalizedStrings.swift */,
+				E95B97DD287B0FB900B0A353 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		E98D5D43287AAA6700C39F5A /* Shared Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +122,7 @@
 		E999952B287AA77500E49F82 /* Shared Models */ = {
 			isa = PBXGroup;
 			children = (
+				E95B97D1287B06D700B0A353 /* Localization */,
 				E99798EA287ACC0100FB3751 /* Shared Models */,
 				E99798D9287ACB7700FB3751 /* Managers */,
 				E99798D5287AC98200FB3751 /* Core Data Models */,
@@ -143,6 +161,10 @@
 			dependencies = (
 			);
 			name = "Shared Models";
+			packageProductDependencies = (
+				E95B97D5287B078400B0A353 /* RxCocoa */,
+				E95B97D7287B078400B0A353 /* RxSwift */,
+			);
 			productName = "Shared Models";
 			productReference = E9999529287AA77500E49F82 /* Shared_Models.framework */;
 			productType = "com.apple.product-type.framework";
@@ -170,6 +192,9 @@
 				Base,
 			);
 			mainGroup = E999951F287AA77500E49F82;
+			packageReferences = (
+				E95B97D4287B078400B0A353 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = E999952A287AA77500E49F82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -184,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95B97DB287B0FB900B0A353 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,10 +224,22 @@
 				E99798D8287AC99900FB3751 /* Movies.xcdatamodeld in Sources */,
 				E99798E3287ACBAB00FB3751 /* CoreDataManager.swift in Sources */,
 				E999952E287AA77500E49F82 /* Shared_Models.docc in Sources */,
+				E95B97D3287B06E500B0A353 /* LocalizedStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E95B97DD287B0FB900B0A353 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E95B97DC287B0FB900B0A353 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E9999530287AA77500E49F82 /* Debug */ = {
@@ -400,6 +438,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E95B97D4287B078400B0A353 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E95B97D5287B078400B0A353 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E95B97D4287B078400B0A353 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E95B97D7287B078400B0A353 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E95B97D4287B078400B0A353 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E99798D6287AC99900FB3751 /* Movies.xcdatamodeld */ = {
