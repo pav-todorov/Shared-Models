@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E98D5D45287AAA8300C39F5A /* MovieResultEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98D5D44287AAA8300C39F5A /* MovieResultEntity.swift */; };
+		E99798D8287AC99900FB3751 /* Movies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E99798D6287AC99900FB3751 /* Movies.xcdatamodeld */; };
 		E999952E287AA77500E49F82 /* Shared_Models.docc in Sources */ = {isa = PBXBuildFile; fileRef = E999952D287AA77500E49F82 /* Shared_Models.docc */; };
 		E999952F287AA77500E49F82 /* Shared_Models.h in Headers */ = {isa = PBXBuildFile; fileRef = E999952C287AA77500E49F82 /* Shared_Models.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E98D5D44287AAA8300C39F5A /* MovieResultEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResultEntity.swift; sourceTree = "<group>"; };
+		E99798D7287AC99900FB3751 /* Movies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movies.xcdatamodel; sourceTree = "<group>"; };
 		E9999529287AA77500E49F82 /* Shared_Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared_Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E999952C287AA77500E49F82 /* Shared_Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared_Models.h; sourceTree = "<group>"; };
 		E999952D287AA77500E49F82 /* Shared_Models.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Shared_Models.docc; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 			path = "Shared Models";
 			sourceTree = "<group>";
 		};
+		E99798D5287AC98200FB3751 /* Core Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				E99798D6287AC99900FB3751 /* Movies.xcdatamodeld */,
+			);
+			path = "Core Data Models";
+			sourceTree = "<group>";
+		};
 		E999951F287AA77500E49F82 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 		E999952B287AA77500E49F82 /* Shared Models */ = {
 			isa = PBXGroup;
 			children = (
+				E99798D5287AC98200FB3751 /* Core Data Models */,
 				E999952C287AA77500E49F82 /* Shared_Models.h */,
 				E98D5D43287AAA6700C39F5A /* Shared Models */,
 				E999952D287AA77500E49F82 /* Shared_Models.docc */,
@@ -144,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98D5D45287AAA8300C39F5A /* MovieResultEntity.swift in Sources */,
+				E99798D8287AC99900FB3751 /* Movies.xcdatamodeld in Sources */,
 				E999952E287AA77500E49F82 /* Shared_Models.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +359,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E99798D6287AC99900FB3751 /* Movies.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E99798D7287AC99900FB3751 /* Movies.xcdatamodel */,
+			);
+			currentVersion = E99798D7287AC99900FB3751 /* Movies.xcdatamodel */;
+			path = Movies.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E9999520287AA77500E49F82 /* Project object */;
 }
