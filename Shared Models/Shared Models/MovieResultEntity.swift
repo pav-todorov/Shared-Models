@@ -49,7 +49,20 @@ public struct MovieResultEntity: Decodable {
             self.title = try container.decode(String.self, forKey: .title)
         }
         
-        public init() {}
+        public init(posterPath: String,
+                    overview: String,
+                    releaseDate: String,
+                    id: Int,
+                    originalTitle: String,
+                    title: String
+        ) {
+            self.posterPath = posterPath
+            self.overview = overview
+            self.releaseDate = releaseDate
+            self.id = id
+            self.originalTitle = originalTitle
+            self.title = title
+        }
         
         // MARK: Properties
         public var posterPath: String? = nil

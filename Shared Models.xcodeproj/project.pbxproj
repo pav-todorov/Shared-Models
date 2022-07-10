@@ -18,6 +18,8 @@
 		E98D5D44287AAA8300C39F5A /* MovieResultEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResultEntity.swift; sourceTree = "<group>"; };
 		E99798D7287AC99900FB3751 /* Movies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movies.xcdatamodel; sourceTree = "<group>"; };
 		E99798E2287ACBAB00FB3751 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		E99798EB287ACC0100FB3751 /* MovieResultEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResultEntity.swift; sourceTree = "<group>"; };
+		E99798EF287ACC0100FB3751 /* Movies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movies.xcdatamodel; sourceTree = "<group>"; };
 		E9999529287AA77500E49F82 /* Shared_Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared_Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E999952C287AA77500E49F82 /* Shared_Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared_Models.h; sourceTree = "<group>"; };
 		E999952D287AA77500E49F82 /* Shared_Models.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Shared_Models.docc; sourceTree = "<group>"; };
@@ -67,6 +69,23 @@
 			path = "Data Persistancy";
 			sourceTree = "<group>";
 		};
+		E99798EA287ACC0100FB3751 /* Shared Models */ = {
+			isa = PBXGroup;
+			children = (
+				E99798ED287ACC0100FB3751 /* Core Data Models */,
+				E99798EB287ACC0100FB3751 /* MovieResultEntity.swift */,
+			);
+			path = "Shared Models";
+			sourceTree = "<group>";
+		};
+		E99798ED287ACC0100FB3751 /* Core Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				E99798EE287ACC0100FB3751 /* Movies.xcdatamodeld */,
+			);
+			path = "Core Data Models";
+			sourceTree = "<group>";
+		};
 		E999951F287AA77500E49F82 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +105,7 @@
 		E999952B287AA77500E49F82 /* Shared Models */ = {
 			isa = PBXGroup;
 			children = (
+				E99798EA287ACC0100FB3751 /* Shared Models */,
 				E99798D9287ACB7700FB3751 /* Managers */,
 				E99798D5287AC98200FB3751 /* Core Data Models */,
 				E999952C287AA77500E49F82 /* Shared_Models.h */,
@@ -388,6 +408,16 @@
 				E99798D7287AC99900FB3751 /* Movies.xcdatamodel */,
 			);
 			currentVersion = E99798D7287AC99900FB3751 /* Movies.xcdatamodel */;
+			path = Movies.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		E99798EE287ACC0100FB3751 /* Movies.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E99798EF287ACC0100FB3751 /* Movies.xcdatamodel */,
+			);
+			currentVersion = E99798EF287ACC0100FB3751 /* Movies.xcdatamodel */;
 			path = Movies.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
