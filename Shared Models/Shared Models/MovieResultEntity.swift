@@ -14,8 +14,8 @@ public struct MovieResultEntity: Decodable {
         
         self.page = try container.decode(Int.self, forKey: .page)
         self.results = try container.decode([Movie].self, forKey: .results)
-        self.totalResults = try container.decode(Int.self, forKey: .totalResults)
         self.totalPages = try container.decode(Int.self, forKey: .totalPages)
+        self.totalResults = try container.decode(Int.self, forKey: .totalResults)
     }
     
     public init() {}
@@ -23,15 +23,16 @@ public struct MovieResultEntity: Decodable {
     // MARK: Properties
     public var page: Int = 0
     public var results: [Movie] = []
-    public var totalResults: Int = 0
     public var totalPages: Int = 0
+    public var totalResults: Int = 0
+    
     
     // MARK: Coding Keys
     private enum CodingKeys: String, CodingKey {
         case page = "page"
         case results = "results"
-        case totalResults = "total_results"
         case totalPages = "total_pages"
+        case totalResults = "total_results"
     }
     
     // MARK: Movie
@@ -40,7 +41,7 @@ public struct MovieResultEntity: Decodable {
         public init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             
-            self.posterPath = try container.decode(String.self, forKey: .posterPath)
+            self.posterPath = try container.decode(String?.self, forKey: .posterPath)
             self.overview = try container.decode(String.self, forKey: .overview)
             self.releaseDate = try container.decode(String.self, forKey: .releaseDate)
             self.id = try container.decode(Int.self, forKey: .id)
@@ -51,7 +52,7 @@ public struct MovieResultEntity: Decodable {
         public init() {}
         
         // MARK: Properties
-        public var posterPath: String = ""
+        public var posterPath: String? = nil
         public var overview: String = ""
         public var releaseDate: String = ""
         public var id: Int = 0
@@ -68,5 +69,5 @@ public struct MovieResultEntity: Decodable {
             case title = "title"
         }
     }
-
+    
 }
