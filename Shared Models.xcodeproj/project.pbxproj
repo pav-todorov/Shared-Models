@@ -10,7 +10,6 @@
 		E95B97D3287B06E500B0A353 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B97D2287B06E500B0A353 /* LocalizedStrings.swift */; };
 		E95B97D6287B078400B0A353 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E95B97D5287B078400B0A353 /* RxCocoa */; };
 		E95B97D8287B078400B0A353 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E95B97D7287B078400B0A353 /* RxSwift */; };
-		E95B97DB287B0FB900B0A353 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E95B97DD287B0FB900B0A353 /* Localizable.strings */; };
 		E98D5D45287AAA8300C39F5A /* MovieResultEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98D5D44287AAA8300C39F5A /* MovieResultEntity.swift */; };
 		E99798D8287AC99900FB3751 /* Movies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E99798D6287AC99900FB3751 /* Movies.xcdatamodeld */; };
 		E99798E3287ACBAB00FB3751 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99798E2287ACBAB00FB3751 /* CoreDataManager.swift */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		E95B97D2287B06E500B0A353 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
-		E95B97DC287B0FB900B0A353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E98D5D44287AAA8300C39F5A /* MovieResultEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResultEntity.swift; sourceTree = "<group>"; };
 		E99798D7287AC99900FB3751 /* Movies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movies.xcdatamodel; sourceTree = "<group>"; };
 		E99798E2287ACBAB00FB3751 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -48,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				E95B97D2287B06E500B0A353 /* LocalizedStrings.swift */,
-				E95B97DD287B0FB900B0A353 /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -209,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E95B97DB287B0FB900B0A353 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,17 +225,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E95B97DD287B0FB900B0A353 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E95B97DC287B0FB900B0A353 /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E9999530287AA77500E49F82 /* Debug */ = {
