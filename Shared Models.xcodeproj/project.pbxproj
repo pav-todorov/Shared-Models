@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E98D5D45287AAA8300C39F5A /* MovieResultEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98D5D44287AAA8300C39F5A /* MovieResultEntity.swift */; };
 		E999952E287AA77500E49F82 /* Shared_Models.docc in Sources */ = {isa = PBXBuildFile; fileRef = E999952D287AA77500E49F82 /* Shared_Models.docc */; };
 		E999952F287AA77500E49F82 /* Shared_Models.h in Headers */ = {isa = PBXBuildFile; fileRef = E999952C287AA77500E49F82 /* Shared_Models.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E98D5D44287AAA8300C39F5A /* MovieResultEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResultEntity.swift; sourceTree = "<group>"; };
 		E9999529287AA77500E49F82 /* Shared_Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared_Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E999952C287AA77500E49F82 /* Shared_Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared_Models.h; sourceTree = "<group>"; };
 		E999952D287AA77500E49F82 /* Shared_Models.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Shared_Models.docc; sourceTree = "<group>"; };
@@ -28,6 +30,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E98D5D43287AAA6700C39F5A /* Shared Models */ = {
+			isa = PBXGroup;
+			children = (
+				E98D5D44287AAA8300C39F5A /* MovieResultEntity.swift */,
+			);
+			path = "Shared Models";
+			sourceTree = "<group>";
+		};
 		E999951F287AA77500E49F82 = {
 			isa = PBXGroup;
 			children = (
@@ -48,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				E999952C287AA77500E49F82 /* Shared_Models.h */,
+				E98D5D43287AAA6700C39F5A /* Shared Models */,
 				E999952D287AA77500E49F82 /* Shared_Models.docc */,
 			);
 			path = "Shared Models";
@@ -132,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E98D5D45287AAA8300C39F5A /* MovieResultEntity.swift in Sources */,
 				E999952E287AA77500E49F82 /* Shared_Models.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
